@@ -6,9 +6,11 @@ const titleSchema = new Schema({
     title: {
         type: String,
         required: true,
-        unique: true,
-        trim: true,
-        minlength: 3
+        unique: true
+    },
+    count: {
+        type: Number,
+        required: true
     },
 },  {
     timestamps: true,

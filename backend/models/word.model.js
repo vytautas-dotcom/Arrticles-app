@@ -10,6 +10,10 @@ const wordSchema = new Schema({
         trim: true,
         minlength: 3
     },
+    count: {
+        type: Number,
+        required: true
+    },
 },  {
     timestamps: true,
 });
